@@ -5,9 +5,7 @@
 
 % =====================================================================
 % EDIT NOTES:
-%  - Replace the placeholder co-author names (e.g. "Coauthor, A." /
-%    "Collaborator, B.") with the real author lists in the correct order.
-%    Your own name is bolded automatically (see `scholar` in _config.yml).
+%  - Your own name is bolded automatically (see `scholar` in _config.yml).
 %  - When a repo / PDF becomes public, add a `code={URL}` (and/or
 %    `pdf={URL}`, `html={URL}`) field to the entry.
 %  - The `arxiv={ID}` field auto-links to https://arxiv.org/abs/ID.
@@ -18,12 +16,12 @@
   bibtex_show      = {true},
   selected         = {true},
   title            = {Code-Switching Information Retrieval: Benchmarks, Analysis, and the Limits of Current Retrievers},
-  author           = {Lu, Yuheng and Coauthor, A. and others},
+  author           = {Zeng, Qingcheng and Lu, Yuheng and Zhou, Zeqi and Qi, Heli and Yu, Puxuan and Zhao, Fuheng and Yanaka, Hitomi and Xuan, Weihao and Yokoya, Naoto},
   booktitle        = aclfindings # {: ACL 2026},
   year             = {2026},
   arxiv            = {2604.17632},
   abstract         = {Code-switching—mixing two or more languages within a single utterance—is pervasive in global communication, yet modern retrievers remain largely tuned for monolingual queries. We build two code-switching retrieval benchmarks: CSR-L (human-annotated, spanning 4 IR datasets in En–Zh and En–Ja) and CS-MTEB (LLM-generated, 11 tasks / 7 categories / 9 language pairs). Benchmarking four retriever families (BM25, bi-encoder, cross-encoder, and ColBERT v2) reveals consistent code-switching degradation of up to 27% even for strong multilingual models. A PCA analysis of the embedding space shows that original and code-switched queries form disjoint clusters, evidencing that the failure is representational rather than surface-level, and a lexicon-based vocabulary expansion method partially closes the gap.},
-  additional_info  = {. <i>*Co-first author.</i>},
+  additional_info  = {. <i>Qingcheng Zeng and Yuheng Lu contributed equally.</i>},
 }
 
 @article{lu2026xbcp,
@@ -31,10 +29,10 @@
   bibtex_show      = {true},
   selected         = {true},
   title            = {Beyond Monolingual Deep Research: Evaluating Agents and Retrievers with Cross-Lingual BrowseComp-Plus},
-  author           = {Lu, Yuheng and Coauthor, A. and others},
+  author           = {Lu, Yuheng and Zeng, Qingcheng and Qi, Heli and Yu, Puxuan and Zhao, Fuheng and Yang, Rui and Yanaka, Hitomi and Yokoya, Naoto and Xuan, Weihao},
   journal          = {arXiv preprint},
   year             = {2026},
   arxiv            = {2606.15345},
   abstract         = {We introduce XBCP, the first benchmark for cross-lingual deep research, extending BrowseComp-Plus into two settings: cross-lingual (single-language evidence per query) and multilingual (evidence distributed equally across 12 high- and low-resource languages), by translating the evidence corpus with external expert quality verification. Evaluating four deep-research agents × five retrievers across three corpus conditions—measuring accuracy, evidence recall, calibration, and citation fidelity—reveals large cross-lingual degradation of ~16–23 pp even for strong dense retrievers. Using oracle retrieval, we isolate a persistent agent-side integration bottleneck beyond retrieval failure, and diagnostic analyses further decompose it into evidence-understanding and prompt-language penalties.},
-  additional_info  = {. <i>*Co-first author.</i>},
+  additional_info  = {. <i>Yuheng Lu and Qingcheng Zeng contributed equally.</i>},
 }
