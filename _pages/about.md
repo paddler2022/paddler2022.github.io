@@ -36,8 +36,7 @@ Electrical Engineering &amp; Automation** from the [Harbin Institute of Technolo
 My research sits at the intersection of **information retrieval** and **LLM-based agents**.
 I build benchmarks and diagnostic analyses that expose where current retrievers and
 deep-research agents break down — particularly in **multilingual and cross-lingual** settings —
-and I am increasingly interested in **agentic systems** for tasks such as remote-sensing
-image restoration.
+and I am currently most interested in **agentic systems** for different tasks.
 
 I am always happy to talk about research. Feel free to reach out by
 [email](mailto:luyuheng@akane.waseda.jp).

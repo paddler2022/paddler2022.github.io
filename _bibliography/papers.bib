@@ -38,22 +38,3 @@
   abstract         = {We introduce XBCP, the first benchmark for cross-lingual deep research, extending BrowseComp-Plus into two settings: cross-lingual (single-language evidence per query) and multilingual (evidence distributed equally across 12 high- and low-resource languages), by translating the evidence corpus with external expert quality verification. Evaluating four deep-research agents × five retrievers across three corpus conditions—measuring accuracy, evidence recall, calibration, and citation fidelity—reveals large cross-lingual degradation of ~16–23 pp even for strong dense retrievers. Using oracle retrieval, we isolate a persistent agent-side integration bottleneck beyond retrieval failure, and diagnostic analyses further decompose it into evidence-understanding and prompt-language penalties.},
   additional_info  = {. <i>*Co-first author.</i>},
 }
-
-@article{socialbright2026,
-  abbr             = {Under Review},
-  bibtex_show      = {true},
-  title            = {Social-BRIGHT: Benchmarking Socially Grounded Reasoning in Information Retrieval},
-  author           = {Collaborator, B. and Lu, Yuheng and others},
-  journal          = {Under review},
-  year             = {2026},
-  abstract         = {Social-BRIGHT casts four forms of social interpretation (interpersonal response, social-group grounding, humor explanation, and dogwhistle detection) into full-corpus retrieval, with 2,154 queries and matched pairs—each pairing a socially correct document with a lexically plausible but misleading hard negative, curated via GPT synthesis and human validation. We introduce a matched-pair accuracy (MPA) metric to isolate social discrimination from recall, and evaluate 18+ retrievers across bi-encoder and late-interaction families zero-shot under a unified MTEB protocol. Current retrievers fail at socially grounded relevance, and three enhancements (reasoning retrievers, reranking, query expansion) yield only selective gains that do not close the gap.},
-}
-
-@article{rsagent2026,
-  abbr             = {Ongoing},
-  title            = {Agentic Orchestration of Single-Degradation Experts for Compound Remote-Sensing Restoration},
-  author           = {Collaborator, B. and Lu, Yuheng and others},
-  journal          = {Work in progress},
-  year             = {2026},
-  abstract         = {We propose an LLM-orchestrated agent that decomposes compound degradations and composes single-degradation expert tools step by step, outperforming all-in-one models on remote-sensing restoration. A rollback-guarded, step-wise execution loop keeps only quality-improving steps (PSNR/SSIM/LPIPS), guaranteeing monotonic improvement and suppressing error accumulation. The agent is backed by a self-maintaining tool library with automatic discovery (a GitHub/arXiv search agent) and verification-based retirement that prunes stale tools to mitigate library drift.},
-}
