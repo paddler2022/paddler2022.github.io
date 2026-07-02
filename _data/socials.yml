@@ -1,0 +1,12 @@
+# Social media links / usernames — displayed at the bottom of the about page.
+# Docs: https://github.com/george-gca/jekyll-socials
+cv_pdf: /assets/pdf/CV_Yuheng_Lu.pdf # path to your CV PDF file
+email: luyuheng@akane.waseda.jp # your email address
+github_username: paddler2022 # your GitHub username
+# EDIT: add your Google Scholar user ID (the string after `user=` in your Scholar profile URL)
+scholar_userid: # e.g. AbCdEfGhIjkL
+# EDIT (optional): uncomment and fill any of the below
+# linkedin_username:
+# orcid_id:
+# semanticscholar_id:
+# x_username:

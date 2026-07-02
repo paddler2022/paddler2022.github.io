@@ -1,0 +1,85 @@
+cv:
+  name: Yuheng Lu
+  label: M.Eng. Student · Information Retrieval &amp; LLM Agents
+  email: luyuheng@akane.waseda.jp
+  location: Kitakyushu, Japan
+  image: ""
+  summary: >
+    Master of Engineering student at Waseda University working on information retrieval and
+    LLM-based agents, with a focus on multilingual / cross-lingual benchmarking and evaluation.
+
+  social_networks:
+    - network: GitHub
+      username: paddler2022
+
+  sections:
+    Education:
+      - institution: Waseda University
+        location: Kitakyushu, Japan
+        url: https://www.waseda.jp/top/en/
+        area: Information (Graduate School of Information, Production and Systems)
+        studyType: M.Eng.
+        start_date: 2025-09
+        end_date: present
+        highlights:
+          - "Research: Deep Research Agents, Information Retrieval, Remote Sensing Agents"
+
+      - institution: École Polytechnique Fédérale de Lausanne (EPFL)
+        location: Lausanne, Switzerland
+        url: https://www.epfl.ch/en/
+        area: Electrical &amp; Electronics Engineering (Minor in Computer Science)
+        studyType: M.Sc.
+        start_date: 2022-09
+        end_date: 2025-07
+        score: "GPA 4.93 / 6.0"
+
+      - institution: Harbin Institute of Technology (HIT)
+        location: Harbin, China
+        url: http://en.hit.edu.cn/
+        area: Electrical Engineering &amp; Automation
+        studyType: B.Eng.
+        start_date: 2018-09
+        end_date: 2022-07
+        score: "GPA 91.15 / 100 · Rank 13 / 296 (top 5%)"
+
+    Experience:
+      - company: SenseTime Research
+        position: Research Engineer Intern, Autonomous Driving Algorithms
+        location: Beijing, China
+        start_date: 2024-07
+        end_date: 2024-12
+        highlights:
+          - "<b>UniAD:</b> built an ETL data pipeline for collecting, cleaning, extracting, and visualizing driving data."
+          - "<b>DriveAGI:</b> used the GPT-4o API to synthesize QA pairs for training a vehicle brand / type recognition model, with an efficient, easy-to-modify processing pipeline."
+
+    Honors and Awards:
+      - title: National Scholarship
+        authors:
+          - Ministry of Education of China
+        date: 2019
+        awarder: Ministry of Education of China
+
+      - title: Infineon Technology Scholarship
+        authors:
+          - Infineon China
+        date: 2020
+        awarder: Infineon China
+
+      - title: Outstanding Student
+        authors:
+          - Harbin Institute of Technology
+        date: 2020
+        awarder: Harbin Institute of Technology
+
+    Skills:
+      - name: Programming
+        icon: fa-solid fa-code
+        keywords: "Python (primary), SQL"
+
+    Languages:
+      - name: Chinese
+        summary: "Native"
+      - name: English
+        summary: "IELTS 7.5 · GRE 325 + 4.0"
+      - name: Japanese
+        summary: "JLPT N2"

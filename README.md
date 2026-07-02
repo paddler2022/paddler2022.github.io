@@ -1,46 +1,49 @@
 # paddler2022.github.io
 
-Personal academic homepage for **Yuheng Lu (卢昱恒)**, served at
+Personal academic homepage for **Yuheng Lu (卢昱恒)**, live at
 <https://paddler2022.github.io>.
 
-Plain HTML / CSS / JS — **no build step**. GitHub Pages serves `index.html` directly
-(a `.nojekyll` file disables Jekyll processing).
+Built with the [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme.
+GitHub Actions builds and deploys the site automatically on every push — you never
+run a server yourself.
 
-## Structure
+## Where to edit things
 
-```
-index.html            # the whole page (all content lives here)
-assets/
-  css/style.css       # styling + light/dark theme
-  js/main.js          # theme toggle + footer year
-  img/profile.jpg     # portrait
-  img/favicon.svg     # favicon (initials)
-  pdf/CV_Yuheng_Lu.pdf# CV linked from the header
-```
+| What | File |
+| --- | --- |
+| Name, site title, URL, favicon, Scholar name | `_config.yml` |
+| Bio, subtitle, profile photo caption | `_pages/about.md` |
+| Publications (titles, arXiv, code, abstracts) | `_bibliography/papers.bib` |
+| News items (homepage) | `_news/*.md` |
+| CV page content | `_data/cv.yml` |
+| Contact / social links | `_data/socials.yml` |
+| Profile photo | `assets/img/prof_pic.jpg` |
+| CV PDF | `assets/pdf/CV_Yuheng_Lu.pdf` |
 
-## Editing
+Search the files for `EDIT` to find the placeholders that still need your input:
 
-Everything you'll want to change is in `index.html`, marked with `<!-- EDIT ... -->`
-comments where relevant:
+- **Google Scholar ID** in `_data/socials.yml` (`scholar_userid`).
+- **Co-author names** and **code/repo links** in `_bibliography/papers.bib`
+  (currently placeholder names like `Coauthor, A.`; the arXiv links are already set).
 
-- **Contact links** — search for `EDIT:` in the hero section and drop in your real
-  Google Scholar / GitHub / email URLs. (GitHub already points to `paddler2022`.)
-- **Publications** — each `<li class="pub">` block. Replace the `…co-authors…`
-  placeholders with the real author lists, and swap the `href="#"` on the
-  **arXiv / Code** buttons for the real links once they're public.
-- **News** — the `<ul class="news">` list; newest on top.
-- **PhD-seeking callout** — the highlighted box in the hero; edit the target term or
-  remove it entirely.
-- To replace the photo, drop a new image at `assets/img/profile.jpg`.
+## Deploy (one-time setup)
 
-## Local preview
+1. Push this repo to `main`.
+2. In **Settings → Actions → General → Workflow permissions**, select
+   **Read and write permissions** (so the deploy action can publish).
+3. Wait for the **Deploy site** workflow (Actions tab) to finish — it builds the site
+   and pushes the result to a `gh-pages` branch.
+4. In **Settings → Pages**, set **Source → Deploy from a branch → `gh-pages` / (root)**.
+
+After that, every push to `main` re-deploys automatically.
+
+## Local preview (optional, needs Docker)
+
+You don't need this to publish, but if you want to preview locally:
 
 ```bash
-python -m http.server 8000
-# then open http://localhost:8000
+docker compose up
+# then open http://localhost:8080
 ```
 
-## Deploy
-
-Push to `main`; enable **Settings → Pages → Deploy from branch → main / (root)**.
-The site updates automatically on every push.
+Stop with `Ctrl+C`. (Requires Docker Desktop.)
