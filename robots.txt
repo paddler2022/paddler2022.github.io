@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://paddler2022.github.io/sitemap.xml
